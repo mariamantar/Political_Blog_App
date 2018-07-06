@@ -3,3 +3,6 @@
 <!-- here we are rendering the result of what was written in the form -->
 <p>Title : <%= @article.title %> </p>
 <p>Description : <%= @article.description %> </p>
+
+<%= link_to 'Edit this article', edit_article_path(@article) %> ||
+<%= link_to "Back to articles listing", articles_path %>
